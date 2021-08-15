@@ -1,8 +1,8 @@
 from tkinter import *
-from tkinter import messagebox
 
 import requests
 import json
+import webbrowser
 
 root = Tk()
 root.title("SK News App")
@@ -132,6 +132,12 @@ def business_news():
         # list_box.insert(END,discription)
         i = i+1
 
+def get_full_story():
+    slug = list_box.get(ACTIVE)
+    url=f'https://www.google.com/search?q={slug}'
+    webbrowser.get().open(url)
+    
+
 # App's Header
 header = Label(root, text='Get The Latest News Updates',bg="blue",fg="white",font=("Times", "21", "bold italic"),borderwidth=5, relief=SUNKEN)
 header.pack(pady=10)
@@ -161,6 +167,8 @@ entertainment.grid(row=0, column=4, padx=10)
 business.grid(row=0, column=5, padx=10)
 sports.grid(row=0, column=6, padx=10)
 
+button=Button(root, text='Get Full Story',bg="purple1",fg="white",font=("Times", "11", "bold"),borderwidth=5,command=get_full_story)
+button.pack(pady=10)
 # Copy Right Label
 label = Label(root, text='SANJAY KUMAR (C) 2021',font=("Times", "11", "bold"),borderwidth=5)
 label.pack(pady=10)
