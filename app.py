@@ -133,24 +133,24 @@ def business_news():
         i = i+1
 
 # App's Header
-header = Label(root, text='Get The Latest News Updates',bg="black",fg="white",font=("Times", "16", "bold italic"),borderwidth=5, relief=SUNKEN)
+header = Label(root, text='Get The Latest News Updates',bg="blue",fg="white",font=("Times", "21", "bold italic"),borderwidth=5, relief=SUNKEN)
 header.pack(pady=10)
 
 # List Box to display the news content
-list_box= Listbox(root, bg="black", fg="green2", font=("Times", "14", "italic"), relief = SUNKEN, borderwidth=10, height = 20 ,width = 110)
+list_box= Listbox(root, bg="black", fg="yellow", font=("Times", "14", "italic"), relief = SUNKEN, borderwidth=10, width=110, height=20)
 list_box.pack(pady=5)
 
 # Control frame
-frame=Frame(root, borderwidth = 5, bg = 'black', relief = SUNKEN, height=20, width=30)
+frame=Frame(root, borderwidth = 5, bg = 'black', relief = SUNKEN)
 frame.pack(pady=20)
 
-india = Button(frame, text='India',bg="purple1",fg="white",font=("Times", "14", "bold"),borderwidth=5,command=india_news)
-health = Button(frame, text='Health',bg="purple1",fg="white",font=("Times", "14", "bold"),borderwidth=5,command=health_news)
-science = Button(frame, text='Science',bg="purple1",fg="white",font=("Times", "14", "bold"),borderwidth=5,command=science_news)
-technology = Button(frame, text='Technology',bg="purple1",fg="white",font=("Times", "14", "bold"),borderwidth=5,command=tech_news)
-entertainment = Button(frame, text='Entertainment',bg="purple1",fg="white",font=("Times", "14", "bold"),borderwidth=5,command=enter_news)
-business = Button(frame, text='Business',bg="purple1",fg="white",font=("Times", "14", "bold"),borderwidth=5,command=business_news)
-sports = Button(frame, text='Sports',bg="purple1",fg="white",font=("Times", "14", "bold"),borderwidth=5,command=sports_news)
+india = Button(frame, text='India',bg="purple1",fg="white",font=("Times", "11", "bold"),borderwidth=5,width=12,command=india_news)
+health = Button(frame, text='Health',bg="purple1",fg="white",font=("Times", "11", "bold"),borderwidth=5,width=12,command=health_news)
+science = Button(frame, text='Science',bg="purple1",fg="white",font=("Times", "11", "bold"),borderwidth=5,width=12,command=science_news)
+technology = Button(frame, text='Technology',bg="purple1",fg="white",font=("Times", "11", "bold"),borderwidth=5,width=12,command=tech_news)
+entertainment = Button(frame, text='Entertainment',bg="purple1",fg="white",font=("Times", "11", "bold"),borderwidth=5,width=12,command=enter_news)
+business = Button(frame, text='Business',bg="purple1",fg="white",font=("Times", "11", "bold"),borderwidth=5,width=12,command=business_news)
+sports = Button(frame, text='Sports',bg="purple1",fg="white",font=("Times", "11", "bold"),borderwidth=5,width=12,command=sports_news)
 
 # Position all the buttons in the control frame
 india.grid(row=0, column=0, padx=10)
@@ -162,7 +162,7 @@ business.grid(row=0, column=5, padx=10)
 sports.grid(row=0, column=6, padx=10)
 
 # Copy Right Label
-label = Label(root, text='SANJAY KUMAR (C) 2021',font=("Times", "12", "bold"),borderwidth=5)
+label = Label(root, text='SANJAY KUMAR (C) 2021',font=("Times", "11", "bold"),borderwidth=5)
 label.pack(pady=10)
 
 root.mainloop()
