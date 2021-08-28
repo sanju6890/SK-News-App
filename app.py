@@ -15,7 +15,8 @@ root.configure(bg='tan1')
 
 def india_news():
     list_box.delete(0,END)
-    url="http://newsapi.org/v2/top-headlines?country=in&apiKey=3e33ba1948eb4504b47af11904512730"
+    url="http://newsapi.org/v2/top-headlines?country=in&apiKey=<PROVIDE YOUR OWN API KEY>"
+    # For API KEY PLEASE CREATE AN ACCOUNT ON <newsapi.org>
     # creating url request
     news = requests.get(url) 
     # creating python object from json
@@ -32,7 +33,8 @@ def india_news():
 
 def health_news():
     list_box.delete(0,END)
-    url = "http://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=3e33ba1948eb4504b47af11904512730"
+    url = "http://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=<PROVIDE YOUR OWN API KEY>"
+    # For API KEY PLEASE CREATE AN ACCOUNT ON <newsapi.org>
     # creating url request
     news = requests.get(url) 
     # creating python object from json
@@ -49,7 +51,8 @@ def health_news():
 
 def science_news():
     list_box.delete(0,END)
-    url="http://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=3e33ba1948eb4504b47af11904512730"
+    url="http://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=<PROVIDE YOUR OWN API KEY>"
+    # For API KEY PLEASE CREATE AN ACCOUNT ON <newsapi.org>
     # creating url request
     news = requests.get(url) 
     # creating python object from json
@@ -66,7 +69,8 @@ def science_news():
 
 def tech_news():
     list_box.delete(0,END)
-    url="http://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=3e33ba1948eb4504b47af11904512730"
+    url="http://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=<PROVIDE YOUR OWN API KEY>"
+    # For API KEY PLEASE CREATE AN ACCOUNT ON <newsapi.org>
     # creating url request
     news = requests.get(url) 
     # creating python object from json
@@ -83,7 +87,8 @@ def tech_news():
 
 def enter_news():
     list_box.delete(0,END)
-    url="http://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=3e33ba1948eb4504b47af11904512730"
+    url="http://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=<PROVIDE YOUR OWN API KEY>"
+    # For API KEY PLEASE CREATE AN ACCOUNT ON <newsapi.org>
     # creating url request
     news = requests.get(url) 
     # creating python object from json
@@ -100,7 +105,8 @@ def enter_news():
 
 def sports_news():
     list_box.delete(0,END)
-    url="http://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=3e33ba1948eb4504b47af11904512730"
+    url="http://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=<PROVIDE YOUR OWN API KEY>"
+    # For API KEY PLEASE CREATE AN ACCOUNT ON <newsapi.org>
     # creating url request
     news = requests.get(url) 
     # creating python object from json
@@ -117,7 +123,8 @@ def sports_news():
 
 def business_news():
     list_box.delete(0,END)
-    url="http://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=3e33ba1948eb4504b47af11904512730"
+    url="http://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=<PROVIDE YOUR OWN API KEY>"
+    # For API KEY PLEASE CREATE AN ACCOUNT ON <newsapi.org>
     # creating url request
     news = requests.get(url) 
     # creating python object from json
