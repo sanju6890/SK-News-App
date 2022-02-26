@@ -3,6 +3,8 @@ from tkinter import *
 import requests
 import json
 import webbrowser
+from decouple import config
+
 
 root = Tk()
 root.title("SK News App")
@@ -15,7 +17,7 @@ root.configure(bg='tan1')
 
 def india_news():
     list_box.delete(0,END)
-    url="http://newsapi.org/v2/top-headlines?country=in&apiKey=<PROVIDE YOUR OWN API KEY>"
+    url="http://newsapi.org/v2/top-headlines?country=in&apiKey=" + config('api_key')
     # For API KEY PLEASE CREATE AN ACCOUNT ON <newsapi.org>
     # creating url request
     news = requests.get(url) 
@@ -33,7 +35,7 @@ def india_news():
 
 def health_news():
     list_box.delete(0,END)
-    url = "http://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=<PROVIDE YOUR OWN API KEY>"
+    url = "http://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=" + config('api_key')
     # For API KEY PLEASE CREATE AN ACCOUNT ON <newsapi.org>
     # creating url request
     news = requests.get(url) 
@@ -51,7 +53,7 @@ def health_news():
 
 def science_news():
     list_box.delete(0,END)
-    url="http://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=<PROVIDE YOUR OWN API KEY>"
+    url="http://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=" + config('api_key')
     # For API KEY PLEASE CREATE AN ACCOUNT ON <newsapi.org>
     # creating url request
     news = requests.get(url) 
@@ -69,7 +71,7 @@ def science_news():
 
 def tech_news():
     list_box.delete(0,END)
-    url="http://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=<PROVIDE YOUR OWN API KEY>"
+    url="http://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=" + config('api_key')
     # For API KEY PLEASE CREATE AN ACCOUNT ON <newsapi.org>
     # creating url request
     news = requests.get(url) 
@@ -87,7 +89,7 @@ def tech_news():
 
 def enter_news():
     list_box.delete(0,END)
-    url="http://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=<PROVIDE YOUR OWN API KEY>"
+    url="http://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=" + config('api_key')
     # For API KEY PLEASE CREATE AN ACCOUNT ON <newsapi.org>
     # creating url request
     news = requests.get(url) 
@@ -105,7 +107,7 @@ def enter_news():
 
 def sports_news():
     list_box.delete(0,END)
-    url="http://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=<PROVIDE YOUR OWN API KEY>"
+    url="http://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=" + config('api_key')
     # For API KEY PLEASE CREATE AN ACCOUNT ON <newsapi.org>
     # creating url request
     news = requests.get(url) 
@@ -123,7 +125,7 @@ def sports_news():
 
 def business_news():
     list_box.delete(0,END)
-    url="http://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=<PROVIDE YOUR OWN API KEY>"
+    url="http://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=" + config('api_key')
     # For API KEY PLEASE CREATE AN ACCOUNT ON <newsapi.org>
     # creating url request
     news = requests.get(url) 
