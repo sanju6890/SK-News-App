@@ -21,7 +21,7 @@ This is a GUI based desktop application which provides you the latest news headl
 
 - User-friendly GUI
 - Provides top 20 news headlines on single click
-- News headlines are from multiple Sources
+- News headlines are from multiple news Sources
 - Buttons for different news categories i.e. India, Health, Science, Technology, Entertainment, Business, etc.
 - Get Full Story button to provide the full story behind a headline
 
